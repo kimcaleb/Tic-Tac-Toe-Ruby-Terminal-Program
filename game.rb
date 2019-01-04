@@ -1,5 +1,5 @@
 class Game
-
+    @number_of_moves = 0
     def initialize
         initialize_game_board 
         initialize_hash
@@ -79,7 +79,7 @@ class Game
     end
 
     def board_full?
-        
+        return @number_of_moves == 9
     end
 
 
