@@ -1,0 +1,17 @@
+Use 2D array 3x3 for gamboard. 
+
+Store All possible moves in a hashmap with the moves as the keys(i.e. B2) and indices to the 2D array as the values. That way, we can map the move to its correct position on the gameboard. 
+
+
+Win condition:
+There are only 8 conditions when X or 0 will win:
+    when the x's or o's fill up the following spots:
+    A1,B1,C1
+    A2,B2,C2
+    A3,B3,C3
+    A1,A2,A3
+    B1,B2,B3
+    C1,C2,C3
+    A1,B2,C3
+    A3,B2,C1
+Else, when all the spots have been taken and none of the win conditions have been met, it is a draw. 
